@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/loadFragment">
+
+    <fragment
+        android:id="@+id/loadFragment"
+        android:name="com.example.expenses.fragments.MenuFragment"
+        android:label="action_LoadFragment_to_reportFragment"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_LoadFragment_to_reportFragment"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_LoadFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_LoadFragment_to_incomeFragment"
+            app:destination="@id/incomeFragment" />
+        <action
+            android:id="@+id/action_LoadFragment_to_recurringFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_loadFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ReportFragment"
+        android:name="com.example.expenses.fragments.ReportFragment"
+        android:label="action_ReportFragment_to_LoadFragment"
+        tools:layout="@layout/fragment_report">
+        <action
+            android:id="@+id/action_ReportFragment_to_LoadFragment"
+            app:destination="@id/loadFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.expenses.fragments.ReportFragment"
+        android:label="action_profileFragment_to_LoadFragment"
+        tools:layout="@layout/fragment_create_user">
+        <action
+            android:id="@+id/action_profileFragment_to_LoadFragment"
+            app:destination="@id/loadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="com.example.expenses.fragments.ReportFragment"
+        android:label="action_incomeFragment_to_LoadFragment"
+        tools:layout="@layout/fragment_create_user">
+        <action
+            android:id="@+id/action_incomeFragment_to_loadFragment"
+            app:destination="@id/loadFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.expenses.ui.home.AddFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_navigation_home_to_loadFragment"
+            app:destination="@id/loadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.expenses.ui.dashboard.ExpensesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+</navigation>

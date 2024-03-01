@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Money manager</string>
+    <string name="title_home">Add</string>
+    <string name="title_dashboard">Recurring Expenses</string>
+    <string name="track">Track Income/Expense</string>
+    <string name="profile">Profile</string>
+    <string name="recur_exp">Recurring Expenses</string>
+    <string name="view_recur">View Recurring Expenses</string>
+    <string name="report">Report</string>
+    <string name="home_page">Home</string>
+    <string name="income">Income</string>
+    <string name="total_income">total income</string>
+    <string name="totalexp">total expense</string>
+    <string name="menu">Menu</string>
+    <string name="generate_report">View Report</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="add_income">Income</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="add_income_button">Save Income</string>
+    <string name="tran_type">Transaction_type</string>
+    <string name="expense">Expenses</string>
+    <string name="sav_rec">Save Record</string>
+    <string name="user">User</string>
+    <string name="inc_exp">Track Income/Expenses</string>
+    <string-array name="repeat_type">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Bi-Weekly</item>
+        <item>Monthly</item>
+        <item>Bi-monthly</item>
+        <item>Quarterly</item>
+        <item>Bi-yearly</item>
+        <item>Yearly</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
